@@ -57,7 +57,11 @@ Ready-made examples can be found in [git repo](https://github.com/CrowdStrike/ru
 There's a [handy script](https://github.com/CrowdStrike/rusty-falcon/tree/main/scripts/run-examples.sh) that can be used to (sequentially) run and test the examples. This script will show the status (pass / fail) of each example.
 
 ```sh
+# Run all examples
 ./scripts/run-examples.sh
+
+# Run a single example
+./scripts/run-examples.sh falcon_custom_ioas
 ```
 
 # [WIP] Project Documentation
@@ -84,7 +88,7 @@ openapi-generator generate -g rust -i swagger.json -o ./new
 
 ## OpenApi Specification Version
 
-`2024-05-29T00:00:02Z`
+`2025-09-19T00:00:03Z`
 
 # Getting Help
 

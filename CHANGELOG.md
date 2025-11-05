@@ -5,9 +5,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.5.0] - 2025-09-24
 
-## [0.4.0] - 2024-08-27
+### Added
+
+- Chore: Added `openssl` and `rustls` feature flags to toggle TLS implementation, with `openssl` enabled by default
+- Deps: Added `serde_with` version `3.14.0`
+
+### Changed
+
+- Update Rusty Falcon to use the latest OpenAPI spec (2025-09-19T00:00:03Z)
+- Update example code to follow the latest OpenAPI spec changes
+- Fix links in the README
+- Fix spelling for docs and api files
+- Handle `intel_indicators` example case in `run-examples.sh` script
+- Update `rust-version` to `1.82.0`
+- Display number of passed examples/tests in `run-examples.sh` script
+- Enable `run-example.sh` script to run a single example
+- Set certain `DetectsExternalAlert` model fields to optional
+
+- Upgrade dependencies:
+  - `clap` to `4.5.19`
+  - `openssl` to `0.10.73` (optional)
+  - `openssl-sys` to `0.9.109` (optional)
+  - `reqwest` to `0.12.20`
+
+## [0.4.0] - 2024-10-08
 
 ### Added
 
@@ -16,14 +39,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Update Rusty Falcon to use the latest OpenAPI spec
+- Update Rusty Falcon to use the latest OpenAPI spec (07 Oct 2024)
 - Update example code to follow the latest OpenAPI spec changes
 - Fix links in the README
 - Fix spelling for docs and api files
 - Error hierarchy revamp to structured errors based on `thiserror` crate
-- Handle `intel_indicators` example case in `run-examples.sh` script
-- Update `rust-version` to `1.72.0`
-- Display number of passed examples/tests in `run-examples.sh` script
 
 - Upgrade dependencies:
   - `clap` to `4.5.18`
