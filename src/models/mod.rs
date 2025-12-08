@@ -828,6 +828,8 @@ pub mod detections_api_detections_count;
 pub use self::detections_api_detections_count::DetectionsApiDetectionsCount;
 pub mod detects_behavior;
 pub use self::detects_behavior::DetectsBehavior;
+pub mod detects_comment;
+pub use self::detects_comment::DetectsComment;
 pub mod detects_device_detail_indexed;
 pub use self::detects_device_detail_indexed::DetectsDeviceDetailIndexed;
 pub mod detects_external_alert;
