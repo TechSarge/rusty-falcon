@@ -5,12 +5,43 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.1] - 2026-05-16
+
+### Added
+
+- Added `wiremock` version `0.6.5`
+- Added API testing
+
+### Changed
+
+- Updated `reqwest` to `0.13.3`
+- Updated `serde_with` to `3.18.0`
+- Updated `msrv` to `1.88.0`
+- Updated deserialization to not fail on api responses
+- Updated examples
+
+## [0.7.0] - 2026-01-28
+
+### Changed
+
+- `BREAKING`: Default TLS backend changed from OpenSSL to rustls - Removed `openssl` and `rustls` feature flags
+- Upgraded `reqwest` to `0.13.1`
+
+### Added
+
+- `native-tls` feature flag for users requiring OpenSSL/native-tls backend
+
+### Removed
+
+- Direct `openssl` and `openssl-sys` dependencies (no longer needed)
+
 ## [0.5.0] - 2025-09-24
 
 ### Added
 
 - Chore: Added `openssl` and `rustls` feature flags to toggle TLS implementation, with `openssl` enabled by default
 - Deps: Added `serde_with` version `3.14.0`
+- Docs: Added instructions for installing on various OS'es
 
 ### Changed
 
@@ -19,7 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix links in the README
 - Fix spelling for docs and api files
 - Handle `intel_indicators` example case in `run-examples.sh` script
-- Update `rust-version` to `1.82.0`
+- Update `rust-version` to `1.83.0`
 - Display number of passed examples/tests in `run-examples.sh` script
 - Enable `run-example.sh` script to run a single example
 - Set certain `DetectsExternalAlert` model fields to optional
